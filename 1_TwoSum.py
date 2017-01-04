@@ -1,9 +1,12 @@
+# Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+# You may assume that each input would have exactly one solution.
+
 class Solution(object):#
-    def twoSum(self, nums, target): #selfÔÚ¶¨ÒåÀàµÄ·½·¨Ê±±ØĞëÒªÓĞ
-        dict={}                     #¿ÕµÄ×Öµä
-        for i in  range(len(nums)): #Ñ­»·Óï¾ä
-            if  target-nums[i] in dict: #Èç¹ûÁ½ÕßÖ®²î³öÏÖÔÚ×ÖµäÖĞ£¬ËµÃ÷ÒÑ¾­ÕÒµ½ÁËÕâ¶ÔÊı
-                return  [dict[target-nums[i]],i] #·µ»ØË÷ÒıÖµ
+    def twoSum(self, nums, target): #selfåœ¨å®šä¹‰ç±»çš„æ–¹æ³•æ—¶å¿…é¡»è¦æœ‰
+        dict={}                     #ç©ºçš„å­—å…¸
+        for i in  range(len(nums)): #å¾ªç¯è¯­å¥
+            if  target-nums[i] in dict: #å¦‚æœä¸¤è€…ä¹‹å·®å‡ºç°åœ¨å­—å…¸ä¸­ï¼Œè¯´æ˜å·²ç»æ‰¾åˆ°äº†è¿™å¯¹æ•°
+                return  [dict[target-nums[i]],i] #è¿”å›ç´¢å¼•å€¼
             dict[nums[i]]=i 
         return  []
         
