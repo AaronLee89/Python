@@ -1,3 +1,6 @@
 # Python
 
-this is my file about Python study.
+This is my study about Python.
+
+1. Two sum.
+
